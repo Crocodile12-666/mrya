@@ -1,0 +1,148 @@
+/* text.css */
+* {
+    box-sizing: border-box;
+    font-family: "Microsoft JhengHei", "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #2d004d; /* JOJO 經典深紫色 */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header 導覽列 */
+header {
+    background-color: #fdf2ff;
+    width: 85%;
+    height: 120px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    border: 3px solid #d4af37; /* 金色邊框 */
+}
+
+header h1 {
+    margin: 0;
+    color: #6a0dad;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+/* 主要容器 */
+.container {
+    display: flex;
+    width: 85%;
+    gap: 30px;
+}
+
+/* 側邊欄 */
+aside {
+    background-color: #fdf2ff;
+    width: 280px;
+    padding: 40px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    flex-shrink: 0;
+    border: 2px solid #d4af37;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #6a0dad;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    text-align: left;
+    line-height: 2;
+    color: #2d004d;
+    font-weight: bold;
+}
+
+/* 主內容區 */
+main {
+    background-color: #fdf2ff;
+    flex-grow: 1;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.5);
+    min-height: 600px;
+    border: 2px solid #d4af37;
+}
+
+main h2 {
+    border-bottom: 3px solid #6a0dad;
+    padding-bottom: 10px;
+    color: #6a0dad;
+}
+
+.text-block {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #6a0dad;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #6a0dad;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 30px;
+    background: #6a0dad;
+    color: #d4af37;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
